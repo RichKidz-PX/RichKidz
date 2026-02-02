@@ -52,7 +52,7 @@ local function autochest()
 for i,v in ipairs(CollectionService:GetTagged("_ChestTagged")) do
     local StartTime = tick()
     if ErrorChest[v] then continue end
-    if tick() - Stime >= 10 then
+    if tick() - Stime >= 15 then
         Character:FindFirstChild("Humanoid").Health = 0 
         break
     end
